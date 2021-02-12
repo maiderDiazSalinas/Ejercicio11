@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ejercicio11</string>
+    <string name="cocacola">Cocacola(0,54€)</string>
+    <string name="kaslimon">Kas Limon(0,57€)</string>
+    <string name="kasnaranja">Kas Naranja(0,57€)</string>
+    <string name="redbull">Red Bull(1,25€)</string>
+    <string name="cerveza">Cerveza(0,62€)</string>
+    <string name="vino">Botella de Vino(3,18€)</string>
+    <string name="nombreapellidos">nombre y apellidos</string>
+    <string name="edad">Soy mayor de edad</string>
+    <string name="cero">0</string>
+    <string name="comprar">Comprar</string>
+    <string name="num_tarjeta">Número de tarjeta</string>
+    <string name="fecha_caducidad">Fecha caducidad</string>
+    <string name="cvv">CVV</string>
+</resources>

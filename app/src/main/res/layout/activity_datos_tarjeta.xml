@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosTarjeta"
+    android:layout_marginBottom="40dp">
+
+    <TextView
+        android:id="@+id/datos_tvCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/datos_guiaHorizontal"
+        android:textColor="@color/teal_700"/>
+
+    <EditText
+        android:id="@+id/datos_etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombreapellidos"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_guiaHorizontal"
+        app:layout_constraintBottom_toTopOf="@id/datos_etNumTarjeta"/>
+
+    <EditText
+        android:id="@+id/datos_etNumTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/num_tarjeta"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_etNombre"
+        app:layout_constraintBottom_toTopOf="@id/datos_etFecha"/>
+
+    <EditText
+        android:id="@+id/datos_etFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/fecha_caducidad"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_etNumTarjeta"
+        app:layout_constraintBottom_toTopOf="@id/datos_etCVV"/>
+
+    <EditText
+        android:id="@+id/datos_etCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cvv"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_etFecha"
+        app:layout_constraintBottom_toTopOf="@id/datos_bComprar"/>
+
+    <Button
+        android:id="@+id/datos_bComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_etCVV" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/datos_guiaHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
